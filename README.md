@@ -11,3 +11,8 @@ A small game, allows two players and play again
 <img width="150" src="https://github.com/WangWurong/iOS-Basic-II/blob/master/Screenshots/tictactoe_1.png" alt="Tic Tac Toe game screenshot"/>
 <img width="150" src="https://github.com/WangWurong/iOS-Basic-II/blob/master/Screenshots/tictactoe_2.png" alt="Tic Tac Toe game screenshot"/>
 <img width="150" src="https://github.com/WangWurong/iOS-Basic-II/blob/master/Screenshots/tictactoe_3.png" alt="Tic Tac Toe game screenshot"/>
+
+### Map App: Location Aware
+Just display the location and other related info. The most boring app.
+
+<img width="150" src="https://github.com/WangWurong/iOS-Basic-II/blob/master/Screenshots/location_aware.png" alt="Location Aware screenshot"/>
