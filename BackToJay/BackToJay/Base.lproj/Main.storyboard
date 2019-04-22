@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BackToJay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fqA-t4-znF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="SunnyDay" id="cMm-Tf-crK"/>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t1c-Fo-VMs">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="pause" id="c35-wJ-FKA">
+                                        <connections>
+                                            <action selector="pause:" destination="BYZ-38-t0r" id="z0d-je-68g"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Zjo-1b-zDK"/>
+                                    <barButtonItem systemItem="play" id="zKd-S7-jBG">
+                                        <connections>
+                                            <action selector="play:" destination="BYZ-38-t0r" id="X9Q-Nv-nFh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="DuG-tg-Kaq"/>
+                                    <barButtonItem systemItem="stop" id="phT-Q1-8qu">
+                                        <connections>
+                                            <action selector="stop:" destination="BYZ-38-t0r" id="YQ3-7P-wC2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="jay.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="knS-uQ-rOx">
+                                <rect key="frame" x="93" y="57" width="188" height="184"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="aXe-Tm-ibe">
+                                <rect key="frame" x="14" y="338" width="347" height="31"/>
+                                <connections>
+                                    <action selector="scrubberMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="akg-Ow-WLy"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sby-qa-NZz">
+                                <rect key="frame" x="14" y="300" width="347" height="31"/>
+                                <connections>
+                                    <action selector="volumeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="joo-M3-Hej"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="knS-uQ-rOx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3le-m9-X7s"/>
+                            <constraint firstItem="knS-uQ-rOx" firstAttribute="top" secondItem="fqA-t4-znF" secondAttribute="bottom" constant="13" id="9S7-Vf-nVC"/>
+                            <constraint firstItem="fqA-t4-znF" firstAttribute="trailing" secondItem="t1c-Fo-VMs" secondAttribute="trailing" id="CEi-l5-pjk"/>
+                            <constraint firstItem="fqA-t4-znF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="J6I-Ee-4Aj"/>
+                            <constraint firstItem="sby-qa-NZz" firstAttribute="top" secondItem="knS-uQ-rOx" secondAttribute="bottom" constant="8" id="WyL-z8-Iip"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aXe-Tm-ibe" secondAttribute="trailing" constant="16" id="ZVH-nv-Q2G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sby-qa-NZz" secondAttribute="trailing" constant="16" id="dPg-RB-vyx"/>
+                            <constraint firstItem="sby-qa-NZz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h8E-KT-fwl"/>
+                            <constraint firstItem="t1c-Fo-VMs" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hiO-xR-pwN"/>
+                            <constraint firstItem="fqA-t4-znF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="huI-bU-iMa"/>
+                            <constraint firstItem="aXe-Tm-ibe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iB1-YR-QZ8"/>
+                            <constraint firstItem="aXe-Tm-ibe" firstAttribute="top" secondItem="sby-qa-NZz" secondAttribute="bottom" constant="8" id="jEd-GZ-EDE"/>
+                            <constraint firstItem="fqA-t4-znF" firstAttribute="centerX" secondItem="knS-uQ-rOx" secondAttribute="centerX" id="qez-ov-5E1"/>
+                            <constraint firstItem="fqA-t4-znF" firstAttribute="leading" secondItem="t1c-Fo-VMs" secondAttribute="leading" id="vxm-4y-gPW"/>
+                            <constraint firstItem="aXe-Tm-ibe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wol-mH-EaR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrubber" destination="aXe-Tm-ibe" id="h8r-K3-IFs"/>
+                        <outlet property="volumeSlider" destination="sby-qa-NZz" id="kFv-mZ-OlE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="jay.jpg" width="500" height="500"/>
+    </resources>
+</document>
