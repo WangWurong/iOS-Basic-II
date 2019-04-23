@@ -38,3 +38,20 @@ features:
 <img width="150" src="https://github.com/WangWurong/iOS-Basic-II/blob/master/Screenshots/memorable_places_4.png" alt="Memorable Places screenshot"/>
 
 <img width="150" src="https://github.com/WangWurong/iOS-Basic-II/blob/master/Screenshots/memorable_places_5.png" alt="Memorable Places screenshot"/>
+
+### Audio Player App: Back To Jay
+Jay Chou is my faviroute singer in China, and the <Qing Tian> is one of his most famous pieces.
+features:
+
+* Music play, pause, stop (start from the beginning)
+* Volume tuning
+
+<img width="150" src="https://github.com/WangWurong/iOS-Basic-II/blob/master/Screenshots/back_to_jay.png" alt="Ye Hui Mei Album cover screenshot"/>
+
+### Gesture App: Sound Shaker
+A simple app that detects the shaking gesture and plays a random sound for it. //
+Reference of the free sound: https://www.freesfx.co.uk/
+
+
+
+
