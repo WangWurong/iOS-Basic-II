@@ -52,6 +52,10 @@ features:
 A simple app that detects the shaking gesture and plays a random sound for it. //
 Reference of the free sound: https://www.freesfx.co.uk/
 
+### Log IN Demo
+use the core data to store the username
+support: log in, update username, log out
+
 
 
 
