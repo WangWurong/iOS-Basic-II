@@ -56,6 +56,10 @@ Reference of the free sound: https://www.freesfx.co.uk/
 use the core data to store the username
 support: log in, update username, log out
 
+### Blog Reader
+an off-line blog reader using the core data and Google Blogger APIs
+
+
 
 
 
